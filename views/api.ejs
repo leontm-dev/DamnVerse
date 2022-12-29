@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DamnVerse</title>
+    <link rel="stylesheet" href="/Api-Lander/style.css">
+    <link rel="icon" href="/Images/damnverse.png">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar" id="nav-bar">
+        <img class="nav-title-img" src="/Images/damnverse.png">
+        <div onclick="openDamn()" class="nav-item" id="nav-item-6">
+            <img class="nav-item-img" src="/Images/globe.png">
+            <div class="nav-item-name">DamnChaotix</div>
+        </div>
+        <div onclick="openMods()" class="nav-item" id="nav-item-5">
+            <img class="nav-item-img" src="/Images/Mods-Icon.png">
+            <div class="nav-item-name">DamnMods</div>
+        </div>
+        <div onclick="openPunkte()" class="nav-item" id="nav-item-4">
+            <img class="nav-item-img" src="/Images/Punkte-Icon.png">
+            <div class="nav-item-name">DamnPoints</div>
+        </div>
+        <div onclick="openAccount()" class="nav-item" id="nav-item-3">
+            <img class="nav-item-img" src="/Images/Account-Icon.png">
+            <div class="nav-item-name">DamnAccount</div>
+        </div>
+        <div onclick="openStats()" class="nav-item" id="nav-item-2">
+            <img class="nav-item-img" src="/Images/Stats-Icon.png">
+            <div class="nav-item-name">DamnStats</div>
+        </div>
+        <div onclick="openHome()" class="nav-item" id="nav-item-1">
+            <img class="nav-item-img" src="/Images/Home-Icon.png">
+            <div class="nav-item-name">Home</div>
+        </div>
+        <div class="nav-menu-burger hide" id="nav-menu-burger" onclick="showMenu()">
+            <img class="nav-menu-burger-img" src="/Images/menu-burger.png">
+        </div>
+    </nav>
+    <div class="nav-menu hide" id="nav-menu">
+        <div class="nav-menu-title hide" id="nav-menu-title">
+            <img class="menu-title-img" src="/Images/damnverse.png">
+            <div class="menu-title-text">DamnVerse</div>
+        </div>
+        <img class="nav-menu-close hide" id="nav-menu-close" onclick="closeMenu()" src="/Images/Close-Icon.png">
+        <div class="nav-menu-item-list" id="nav-menu-item-list">
+            <div onclick="openHome()" class="nav-menu-item hide" id="nav-menu-item-1">
+                <img class="menu-item-img" src="/Images/Home-Icon.png">
+                <div class="menu-item-name">Home</div>
+            </div>
+            <div onclick="openStats()" class="nav-menu-item hide" id="nav-menu-item-2">
+                <img class="menu-item-img" src="/Images/Stats-Icon.png">
+                <div class="menu-item-name">DamnStats</div>
+            </div>
+            <div onclick="openAccount()" class="nav-menu-item hide" id="nav-menu-item-3">
+                <img class="menu-item-img" src="/Images/Account-Icon.png">
+                <div class="menu-item-name">DamnAccount</div>
+            </div>
+            <div onclick="openPunkte()" class="nav-menu-item hide" id="nav-menu-item-4">
+                <img class="menu-item-img" src="/Images/Punkte-Icon.png">
+                <div class="menu-item-name">DamnPoints</div>
+            </div>
+            <div onclick="openMods()" class="nav-menu-item hide" id="nav-menu-item-5">
+                <img class="menu-item-img" src="/Images/Mods-Icon.png">
+                <div class="menu-item-name">DamnMods</div>
+            </div>
+            <div onclick="openDamn()" class="nav-menu-item hide" id="nav-menu-item-6">
+                <img class="menu-item-img" src="/Images/globe.png">
+                <div class="menu-item-name">DamnChaotix</div>
+            </div>
+        </div>
+    </div>
+    <div class="playground" id="playground">
+        <div class="opener" id="opener">
+            <div class="background" id="particles-js"></div>
+            <div class="opener-title">DamnAPI</div>
+            <button class="continue" id="continue" onclick="startPlayground()">Starten...</button>
+        </div>
+        <div class="api hide" id="api">
+            <div class="api-title" id="api-title">DamnAPI</div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-title">Endpunkte</div>
+                <div class="sidebar-element-list" id="sidebar-element-list">
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/profil</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/name</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/verifiziert</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/gesamt_name</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/privat</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/profilbild</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/externer_link</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/biographie</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/kategorie</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/instagram/follower</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/profil</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/follower</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/name</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/beschreibung</div>
+                    </div>
+                    <div class="sidebar-element">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/aufrufe</div>
+                    </div>
+                    <div class="sidebar-element" onclick="">
+                        <div class="element-type-get">GET</div>
+                        <div class="element-name">/twitch/nachrichten?name=username</div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-field" id="code-field"></div>
+        </div>
+    </div>
+    <script src="/Api-Lander/script.js"></script>
+    <script src="/Api-Lander/particles.js"></script>
+    <script src="/Api-Lander/app.js"></script>
+</body>
+</html>
