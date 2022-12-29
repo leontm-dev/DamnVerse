@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Amatic+SC:wght@700&family=Lobster&family=Mulish&family=Rubik+Vinyl&family=Sevillana&display=swap');
+.hide {
+    display: none;
+};
+html {
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #30ff00;
+    z-index: 100;
+}
+.nav-title-img {
+    float: left;
+    margin: 5px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    position: relative;
+    float: right;
+    min-width: 60px;
+    height: 60px;
+    margin: 0 15px;
+}
+.nav-item-img {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.nav-item-name {
+    float: right;
+    height: 60px;
+    margin: 0;
+    font-family: "Mulish";
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+.nav-item:hover > .nav-item-name {
+    display: unset;
+}
+.nav-item:hover {
+    border-bottom: solid 4px;
+    cursor: pointer;
+}
+.nav-menu-burger {
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+.nav-menu-burger:hover {
+    cursor: pointer;
+}
+.nav-menu-burger-img {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+.nav-menu {
+    position: fixed;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #30ff00;
+    top: 0px;
+    z-index: 100;
+}
+.nav-menu-title {
+    position: relative;
+    margin: 40px 20px;
+    height: 60px;
+}
+.menu-title-text {
+    font-family: "Allan";
+    font-size: 50px;
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+}
+.menu-title-img {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.nav-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+}
+.nav-menu-close:hover {
+    cursor: pointer;
+}
+.nav-menu-item-list {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+}
+.nav-menu-item {
+    position: relative;
+    margin: 20px;
+    width: 270px;
+    height: 60px;
+}
+.menu-item-img {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.menu-item-name {
+    position: relative;
+    font-size: 30px;
+    height: 60px;
+    font-family: "Mulish";
+    vertical-align: middle;
+    line-height: 60px;
+}
+.nav-menu-item:hover {
+    cursor: pointer;
+    border-bottom: 4px solid;
+}
+.header-section {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.header-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    line-height: 100vh;
+    font-size: 150px;
+    font-family: "Lobster";
+    color: #30ff00;
+    z-index: 4;
+}
+.headline {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    line-height: 100vh;
+    font-size: 150px;
+    font-family: "Lobster";
+    color: #30ff00;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.arrow-to-more {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #30ff00;
+    left: calc(50% - 30px);
+    bottom: 20px;
+    z-index: 5;
+    transform: rotate(90deg);
+}
+.introduction-section {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+}
+.intro-title {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 60px;
+    font-family: "Lobster";
+    color: #30ff00;
+}
+.intro-1 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 50px;
+    font-family: "Mulish";
+    color: #30ff00;
+}
+.intro-1 a {
+    color: #30ff00;
+    text-decoration: underline;
+    font-family: "Lobster";
+}
+.intro-2 {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-size: 50px;
+    font-family: "Mulish";
+    color: #30ff00;
+}
+.intro-2 a {
+    color: #30ff00;
+    text-decoration: underline;
+    font-family: "Lobster";
+}
+.intro-3 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-family: "Mulish";
+    font-size: 50px;
+    color: #30ff00;
+}
+.intro-3 a {
+    color: #30ff00;
+    text-decoration: underline;
+    font-family: "Lobster";
+}
+.intro-4 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    color: #30ff00;
+    font-size: 50px;
+    font-family: "Mulish";
+}
+.intro-explore {
+    position: absolute;
+    bottom: 10%;
+    height: 10%;
+    left: 30%;
+    width: 40%;
+    background-color: #30ff00;
+    font-size: 40px;
+    font-family: "Lobster";
+    animation: wobble-hor-top 2s 3s;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+}
+.intro-stream {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 620px;
+    height: 378px;
+}
+a:hover {
+    cursor: pointer;
+}
+/*Animationen*/
+.showMenu {
+    animation: showMenu 2s;
+}
+.closeMenu {
+    animation: closeMenu 2s;
+}
+@keyframes wobble-hor-top {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+
+@keyframes showMenu {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 300px;
+    }
+}
+@keyframes closeMenu {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 0px;
+    }
+}
