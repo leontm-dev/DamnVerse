@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Amatic+SC:wght@700&family=Lobster&family=Mulish&family=Rubik+Vinyl&family=Sevillana&display=swap');
+.hide {
+    display: none;
+};
+html {
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #30ff00;
+    z-index: 100;
+}
+.nav-title-img {
+    float: left;
+    margin: 5px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-item {
+    position: relative;
+    float: right;
+    min-width: 60px;
+    height: 60px;
+    margin: 0 15px;
+}
+.nav-item-img {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.nav-item-name {
+    float: right;
+    height: 60px;
+    margin: 0;
+    font-family: "Mulish";
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+.nav-item:hover > .nav-item-name {
+    display: unset;
+}
+.nav-item:hover {
+    border-bottom: solid 4px;
+    cursor: pointer;
+}
+.nav-menu-burger {
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+.nav-menu-burger:hover {
+    cursor: pointer;
+}
+.nav-menu-burger-img {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+.nav-menu {
+    position: fixed;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #30ff00;
+    top: 0px;
+    z-index: 100;
+}
+.nav-menu-title {
+    position: relative;
+    margin: 40px 20px;
+    height: 60px;
+}
+.menu-title-text {
+    font-family: "Allan";
+    font-size: 50px;
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+}
+.menu-title-img {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.nav-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+}
+.nav-menu-close:hover {
+    cursor: pointer;
+}
+.nav-menu-item-list {
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+}
+.nav-menu-item {
+    position: relative;
+    margin: 20px;
+    width: 270px;
+    height: 60px;
+}
+.menu-item-img {
+    position: relative;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+.menu-item-name {
+    position: relative;
+    font-size: 30px;
+    height: 60px;
+    font-family: "Mulish";
+    vertical-align: middle;
+    line-height: 60px;
+}
+.nav-menu-item:hover {
+    cursor: pointer;
+    border-bottom: 4px solid;
+}
+.playground {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.opener {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+}
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+}
+.opener-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+    height: 100%;
+    width: 100%;
+    font-size: 150px;
+    color: #30ff00;
+    z-index: 39;
+    font-family: "Lobster";
+}
+.continue {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: #30ff00;
+    width: 20%;
+    height: 10%;
+    border: none;
+    font-family: "Mulish";
+    font-size: 40px;
+    z-index: 41;
+}
+.continue:hover{
+    cursor: pointer;
+}
+.api {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+.api-title {
+    position: absolute;
+    bottom: 85%;
+    left: 5%;
+    font-size: 50px;
+    color: #30ff00;
+    font-family: "Lobster";
+}
+.sidebar {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    border: #30ff00 solid;
+}
+.sidebar-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    font-size: 30px;
+    font-family: "Mulish";
+    border-bottom: #30ff00 solid;
+    color: #30ff00;
+    width: 100%;
+}
+.sidebar-element-list {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: scroll;
+}
+.sidebar-element-list::-webkit-scrollbar {
+    display: none;
+}
+.sidebar-element {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+}
+.element-type-get {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-family: "Mulish";
+    font-weight: 900;
+}
+.element-name {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+    height: 60px;
+    width: calc(100% - 80px);
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 30px;
+    font-family: "Mulish";
+    color: white;
+}
+.code-field {}
